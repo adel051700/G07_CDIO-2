@@ -1,5 +1,5 @@
 /**
- * Class has method rollDie, that returns a random integer between 1 and 6.
+ * Class has method rollDie, that returns a random integer between 1 and number of sides specified.
  */
 import java.util.Random;
 
