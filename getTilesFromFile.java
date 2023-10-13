@@ -1,6 +1,8 @@
 import java.io.File;
-class getTilesFromFile {
-  public static void main(String[] args) {
+class getTilesFromFile 
+{
+  public static void main(String[] args) 
+  {
     String language = "english";
     try
     {
@@ -10,12 +12,16 @@ class getTilesFromFile {
       while (Scanner.hasNextLine())
     {
       String tile = Scanner.nextLine();
-      System.out.println(tile);
+      String[] tileValues = tile.split(":");
+      String name = tileValues[0];
+      String story = tileValues[1];
+      int value = Integer.parseInt(tileValues[2]);
     }
 
-    } catch(Exception e)
+    } 
+    catch(Exception e)
     {
-      System.out.println(e + "Error bitch");
+      System.out.println(e + " Error bitch");
     }
 
     
