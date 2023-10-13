@@ -22,7 +22,7 @@ class getTilesFromFile
       tileArr[i] = new Tile(name,story,value);
       i++;
     }
-
+    Scanner.close();
     } 
     catch(Exception e)
     {
