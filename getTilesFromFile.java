@@ -22,7 +22,6 @@ class getTilesFromFile
       tileArr[i] = new Tile(name,story,value);
       i++;
     }
-    System.out.println(tileArr[1]);
 
     } 
     catch(Exception e)
