@@ -3,9 +3,9 @@ class Tiles {
     private String story;
     private int value;
     
-    public Tiles(String name, value)
+    public Tiles()
     {
-        this.name = name;
-        this.value = value;
+        
     }
+
 }
