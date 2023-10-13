@@ -27,7 +27,7 @@ class getTilesFromFile
     } 
     catch(Exception e)
     {
-      System.out.println(e + " Error bitch");
+      System.out.println(e + " Error");
     }
 
     
