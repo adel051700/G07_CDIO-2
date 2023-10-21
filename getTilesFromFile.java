@@ -8,14 +8,14 @@ class getTilesFromFile
     String language = "english";
     try
     {
-    var fileToRead = new File(language + ".txt");
+    var fileToRead = new File(language + ".csv");
     var Scanner = new java.util.Scanner(fileToRead);
     int i = 0;
       while (Scanner.hasNextLine())
     {
       
       String tile = Scanner.nextLine();
-      String[] tileValues = tile.split(":");
+      String[] tileValues = tile.split(";");
       String name = tileValues[0];
       String story = tileValues[1];
       int value = Integer.parseInt(tileValues[2]);
