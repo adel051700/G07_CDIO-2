@@ -8,7 +8,7 @@ public changeBalance(int balance){
 
 }
 
-balance getBalance(){
+public getBalance(){
     return this.balance;
 }
 
