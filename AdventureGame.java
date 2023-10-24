@@ -1,1 +1,7 @@
-class AdventureGame
+public class AdventureGame {
+
+    public static void main(String[] args) {
+        
+    }
+    
+}
