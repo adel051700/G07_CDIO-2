@@ -7,7 +7,7 @@ class getTilesFromFile
     //Create Tiles from csv file of the chosen language, and create array of type Tile
     // with all tiles
 
-    int numberOfTiles = 11;
+    int numberOfTiles = 12;
     Tile[]tileArr = new Tile[numberOfTiles];
     String language = "english";
     try
