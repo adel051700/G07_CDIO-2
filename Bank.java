@@ -1,6 +1,6 @@
 public class Bank{
 
-private int balance = 0;
+private int balance = 1000;
 
 public void changeBalance(int deltaBalance)
 {
@@ -13,7 +13,10 @@ public int getBalance()
     return this.balance;
 }
 
-    
+public Bank() 
+{
+
+}    
     
 }
 
