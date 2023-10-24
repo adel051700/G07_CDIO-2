@@ -4,10 +4,15 @@
 import java.util.Random;
 
 class Dice {
+    private int sides;
+    public Dice(int sides)
+    {
+        this.sides = sides;
+    }
 
-    public static int rollDie(int sides) {
+    public int rollDie() {
         Random r = new Random();
-        int rInt = r.nextInt(sides);
+        int rInt = r.nextInt(this.sides);
 
         return rInt + 1; 
 
