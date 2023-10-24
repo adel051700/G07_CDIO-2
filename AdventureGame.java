@@ -10,7 +10,9 @@ public class AdventureGame {
         int sum=dice1.rollDie() + dice2.rollDie();
         
         Tile[] tiles= Tile.getTilesFromFile();
-        tiles[0].getStory();
+        System.out.println(tiles[sum].getStory());
+        player1.changeBalance(tiles[sum].getValue());
+        System.out.println(player1.getBalance());
 
     }
     
