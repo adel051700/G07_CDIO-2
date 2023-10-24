@@ -11,6 +11,20 @@ class Tile
         this.story = story;
         this.value = value;
     }
+
+  public int getValue()
+  {
+    return this.value;
+  }
+  public String getName()
+  {
+    return this.name;
+  }
+  public String getStory()
+  {
+    return this.story;
+  }
+
   public Tile[] getTilesFromFile()
   {
     //Create Tiles from csv file of the chosen language, and create array of type Tile
