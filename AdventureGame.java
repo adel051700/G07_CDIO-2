@@ -12,7 +12,7 @@ public class AdventureGame {
         Tile[] tiles= Tile.getTilesFromFile();
         System.out.println(tiles[sum].getStory());
         player1.changeBalance(tiles[sum].getValue());
-        System.out.println(player1.getBalance());
+        System.out.println(player1.toString());
 
     }
     
