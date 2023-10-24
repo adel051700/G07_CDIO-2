@@ -25,7 +25,7 @@ class Tile
     return this.story;
   }
 
-  public static Tile[] getTilesFromFile()
+  public Tile[] getTilesFromFile()
   {
     //Create Tiles from csv file of the chosen language, and create array of type Tile
     // with all tiles
