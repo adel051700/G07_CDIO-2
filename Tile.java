@@ -25,14 +25,13 @@ class Tile
     return this.story;
   }
 
-  public static Tile[] getTilesFromFile()
+  public static Tile[] getTilesFromFile(String language)
   {
     //Create Tiles from csv file of the chosen language, and create array of type Tile
     // with all tiles
 
-    int numberOfTiles = 12;
+    int numberOfTiles = 11;
     Tile[]tileArr = new Tile[numberOfTiles];
-    String language = "english";
     try
     {
     var fileToRead = new File(language + ".csv");

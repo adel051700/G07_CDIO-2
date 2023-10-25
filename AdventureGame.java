@@ -2,13 +2,14 @@ import java.util.Scanner;
 public class AdventureGame {
 
     public static void main(String[] args) {
+        String language = "english";
         Scanner s= new Scanner(System.in);  
         Player player1 = new Player(1);
         Player player2 = new Player(2);
         boolean player1turn = true;
         Dice dice1 = new Dice(6);
         Dice dice2 = new Dice(6);
-        Tile[] tiles = Tile.getTilesFromFile();
+        Tile[] tiles = Tile.getTilesFromFile(language);
         System.out.println("Welcome to the game! Press enter to start your journey!");
         s.nextLine();
         
