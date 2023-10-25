@@ -30,7 +30,7 @@ public class AdventureGame {
                 }
                 System.out.println(tiles[sum - 2].getStory());
                 player1.changeBalance(tiles[sum - 2].getValue());
-                System.out.println("\n" + player1.toString());
+                System.out.println("\n" + player1.toString()+"\n");
             } else if (!player1turn) {
                 int sum = dice1.rollDie() + dice2.rollDie();
                 System.out.println("You rolled a " + sum + "\n");
@@ -39,7 +39,7 @@ public class AdventureGame {
                 }
                 System.out.println(tiles[sum - 2].getStory());
                 player2.changeBalance(tiles[sum - 2].getValue());
-                System.out.println("\n" + player2.toString());
+                System.out.println("\n" + player2.toString()+ "\n");
             }
         }
         if (player1.getBalance() > 3000) {
