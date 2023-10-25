@@ -8,7 +8,7 @@ public class AdventureGame {
         boolean player1turn = true;
         Dice dice1 = new Dice(6);
         Dice dice2 = new Dice(6);
-
+        Tile[] tiles = Tile.getTilesFromFile();
         System.out.println("Welcome to the game! Press enter to start your journey!");
         s.nextLine();
         
@@ -18,7 +18,7 @@ public class AdventureGame {
         } else {
             System.out.println("It's player two's turn, press enter to roll the die!");
         }
-        Tile[] tiles = Tile.getTilesFromFile();
+        
         s.nextLine();
             if (player1turn) {
                 int sum = dice1.rollDie() + dice2.rollDie();
