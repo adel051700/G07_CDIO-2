@@ -18,25 +18,23 @@ public class AdventureGame {
         } else {
             System.out.println("It's player two's turn, press enter to roll the die!");
         }
-        
+        Tile[] tiles = Tile.getTilesFromFile();
         s.nextLine();
             if (player1turn) {
                 int sum = dice1.rollDie() + dice2.rollDie();
                     if(sum != 10){
                         player1turn = false;
                     }
-                Tile[] tiles = Tile.getTilesFromFile();
-                System.out.println(tiles[sum-1].getStory());
-                player1.changeBalance(tiles[sum-1].getValue());
+                System.out.println(tiles[sum-2].getStory());
+                player1.changeBalance(tiles[sum-2].getValue());
                 System.out.println(player1.toString());
             } else if (!player1turn) {
                 int sum = dice1.rollDie() + dice2.rollDie();
                     if(sum != 10){
                         player1turn = true;
                     }
-                Tile[] tiles = Tile.getTilesFromFile();
-                System.out.println(tiles[sum-1].getStory());
-                player2.changeBalance(tiles[sum-1].getValue());
+                System.out.println(tiles[sum-2].getStory());
+                player2.changeBalance(tiles[sum-2].getValue());
                 System.out.println(player2.toString());
             }
         }
