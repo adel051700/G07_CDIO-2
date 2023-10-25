@@ -10,14 +10,20 @@ public class AdventureGame {
         System.out.println("Welcome to the game! Player 1, press enter to start your journey!");
 
         while (player1.getBalance() < 3000 && player2.getBalance() < 3000) {
-            if (player1turn == true) {
+            if (player1turn) {
                 int sum = dice1.rollDie() + dice2.rollDie();
+                    if(sum != 10){
+                        player1turn = false;
+                    }
                 Tile[] tiles = Tile.getTilesFromFile();
                 System.out.println(tiles[sum].getStory());
                 player1.changeBalance(tiles[sum].getValue());
                 System.out.println(player1.toString());
-            } else if (player1turn == false) {
+            } else if (!player1turn) {
                 int sum = dice1.rollDie() + dice2.rollDie();
+                    if(sum != 10){
+                        player1turn = true;
+                    }
                 Tile[] tiles = Tile.getTilesFromFile();
                 System.out.println(tiles[sum].getStory());
                 player2.changeBalance(tiles[sum].getValue());
