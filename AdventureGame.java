@@ -11,7 +11,7 @@ public class AdventureGame {
         Dice dice1 = new Dice(6);
         Dice dice2 = new Dice(6);
         Tile[] tiles = Tile.getTilesFromFile(language);
-        System.out.println("Welcome to the game! Press enter to start your journey!");
+        System.out.println("Welcome to the game! All players start with a 1000 gold. Press enter to start your journey!");
         s.nextLine();
 
         while (player1.getBalance() < 3000 && player2.getBalance() < 3000) {
