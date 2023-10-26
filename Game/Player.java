@@ -8,7 +8,7 @@ public class Player {
     }
     
     public String toString(){
-        return "Player " + this.playerNumber + " bankbalance: " + getBalance();
+        return "Player " + this.playerNumber + " bank balance: " + getBalance();
     }
 
     public int getBalance() {

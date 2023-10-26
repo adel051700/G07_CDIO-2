@@ -24,7 +24,7 @@ public class JUnitTestAdventureGame {
 
     @Test 
     public void testToString() {
-        String expected = "Player 1 bankbalance: 1000";
+        String expected = "Player 1 bank balance: 1000";
         assertEquals(expected, player.toString());
     }
 
