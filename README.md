@@ -5,5 +5,5 @@ For the user:
 How to start the program:
 Step 1: Double click the RunGame.bat file
 Step 2: If the Windows defender pops up and stops you from running the game, click on "Learn more" and then "Run anyway"
-Step 3: When the terminal opens up and the game starts, press enter to throw the dice.
+Step 3: When the terminal opens up and the game starts, press enter to start the game and throw the die.
 Step 4: Continue playng untill someone wins
